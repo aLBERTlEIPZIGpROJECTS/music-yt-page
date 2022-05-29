@@ -1,0 +1,46 @@
+@use "./fontSizes" as *;
+@use "./colors" as *;
+
+h1{
+    font-size: $font-big;
+    color : $grey;
+    line-height: 1.6em;
+    text-align: center;
+}
+
+h2{
+    font-size: $font-med;
+    color: $grey;
+    line-height: 1.6em;
+    margin: 1.5em 0;
+}
+
+p, a{
+    font-size: $font-small;
+    color: $grey;
+    line-height: 1.6em;
+    margin: 1.5em 0;
+}
+
+a {
+    text-decoration: none;
+    margin: 1.5em 1em;
+}
+
+menu a {
+    display: none;
+}
+
+.copyright {
+    font-size: 1.4rem;
+    color: white;
+}
+
+.next-stream__title{
+    font-size: $font-small;
+    color: $grey;
+    line-height: 1.6em;
+    margin: 1.5em 0;
+    text-align: center;
+    font-weight: 700;
+}

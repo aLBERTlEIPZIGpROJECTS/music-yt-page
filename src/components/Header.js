@@ -1,7 +1,11 @@
+import React, {useContext} from "react"
+import { TitleContext } from "../components/TitleContext"
+
 export const Header = () => {
+    const { title, setTitle} = useContext(TitleContext)
     return(
         <header>
-            <h1>Header Title</h1>
+            <h1>{title}</h1>
             <menu>
                 <a href="">Inicio</a>
                 <a href="">Directos</a>

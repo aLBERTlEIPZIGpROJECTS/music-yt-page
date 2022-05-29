@@ -1,0 +1,135 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:root {
+  font-size: 10px;
+}
+
+h1 {
+  font-size: 3.3rem;
+  color: #8D9DA9;
+  line-height: 1.6em;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.7rem;
+  color: #8D9DA9;
+  line-height: 1.6em;
+  margin: 1.5em 0;
+}
+
+p, a {
+  font-size: 1.8rem;
+  color: #8D9DA9;
+  line-height: 1.6em;
+  margin: 1.5em 0;
+}
+
+a {
+  text-decoration: none;
+  margin: 1.5em 1em;
+}
+
+menu a {
+  display: none;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  color: white;
+}
+
+.next-stream__title {
+  font-size: 1.8rem;
+  color: #8D9DA9;
+  line-height: 1.6em;
+  margin: 1.5em 0;
+  text-align: center;
+  font-weight: 700;
+}
+
+button {
+  border: none;
+  background-color: #90CEFC;
+  border-radius: 5px;
+  margin: 3.5vh auto;
+  display: block;
+}
+button a {
+  color: white;
+}
+
+header {
+  background-color: #90CEFC;
+  padding: 1.5em 0;
+}
+
+footer {
+  background-color: #8D9DA9;
+  padding: 0.75em 1.5em;
+  position: fixed;
+  inset: auto 0 0 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+main {
+  padding: 0 2.5em;
+  margin-bottom: 15vh;
+}
+
+.next-stream__image {
+  width: 80vw;
+  height: 35vw;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=main.css.map */

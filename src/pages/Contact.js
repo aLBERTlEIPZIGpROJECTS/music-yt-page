@@ -1,4 +1,7 @@
+import React, {useContext} from "react"
+import { TitleContext } from "../components/TitleContext"
 export const Contact = () => {
+    const { title, setTitle} = useContext(TitleContext)
     return(
         <>
             <h2>¡Encantado de leerte!</h2>

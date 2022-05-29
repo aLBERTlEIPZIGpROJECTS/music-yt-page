@@ -1,3 +1,5 @@
+import React, {useContext} from "react"
+import { TitleContext } from "../components/TitleContext"
 import { PastLiveCard } from "../components/PastLiveCard";
 
 const pastLiveList = [
@@ -5,6 +7,7 @@ const pastLiveList = [
 ]
 
 export const DirectosSubscribers = () => {
+  const { title, setTitle} = useContext(TitleContext)
   return (
     <>
       <div>
@@ -16,6 +19,7 @@ export const DirectosSubscribers = () => {
         <img
           src="https://images.unsplash.com/photo-1549289524-06cf8837ace5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cGFpbnRpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
           alt=""
+          className="next-stream__image"
         />
       </div>
       <div>

@@ -1,4 +1,9 @@
+import React, {useContext} from "react"
+import { TitleContext } from "../components/TitleContext"
+
 export const LandingPage = () => {
+  const { title, setTitle} = useContext(TitleContext)
+  
   return (
     <>
       <p>

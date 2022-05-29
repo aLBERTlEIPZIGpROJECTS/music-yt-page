@@ -1,4 +1,7 @@
+import React, {useContext} from "react"
+import { TitleContext } from "../components/TitleContext"
 export const AboutMe = () => {
+  const { setTitle} = useContext(TitleContext)
   return (
     <>
       <p>
