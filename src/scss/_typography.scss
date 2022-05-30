@@ -3,7 +3,7 @@
 
 h1{
     font-size: $font-big;
-    color : $grey;
+    color : $white;
     line-height: 1.6em;
     text-align: center;
 }
@@ -12,19 +12,22 @@ h2{
     font-size: $font-med;
     color: $grey;
     line-height: 1.6em;
-    margin: 1.5em 0;
+    margin: .5em 0 1.5em;
+    text-align: center;
 }
 
-p, a{
+p, a, label{
     font-size: $font-small;
     color: $grey;
     line-height: 1.6em;
-    margin: 1.5em 0;
+    margin: 2em auto;
+    max-width: 75ch;
 }
 
 a {
     text-decoration: none;
     margin: 1.5em 1em;
+    padding: .5em 1em;
 }
 
 menu a {

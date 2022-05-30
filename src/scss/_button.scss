@@ -1,9 +1,10 @@
 @use "./colors" as *;
 button {
     border: none;
-    background-color: $blue;
+    background-color: $darkBlue;
     border-radius: 5px;
-    margin: 3.5vh auto;
+    margin: 6.5vh auto;
+    padding: .5em 1em;
     display: block;
     
     & a {

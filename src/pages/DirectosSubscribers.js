@@ -1,17 +1,18 @@
-import React, {useContext} from "react"
-import { TitleContext } from "../components/TitleContext"
-import { PastLiveCard } from "../components/PastLiveCard";
+import React, { useContext } from 'react';
+import { TitleContext } from '../components/TitleContext';
+import { PastLiveCard } from '../components/PastLiveCard';
 
 const pastLiveList = [
-  {liveTitle : "1 Sinfonia Mozart", liveDate : "20, 03, 2022"}
-]
+  { liveTitle: '1 Sinfonia Mozart', liveDate: '20, 03, 2022' },
+];
 
 export const DirectosSubscribers = () => {
-  const { title, setTitle} = useContext(TitleContext)
+  const { title, setTitle } = useContext(TitleContext);
+  setTitle('Directos');
   return (
     <>
-      <div>
-        <div>
+      <div className="directos__anuncio">
+        <div className="directos__texto">
           <p>¡Proximo directo!</p>
           <p>TT / MM || HH:HH</p>
         </div>
@@ -21,12 +22,19 @@ export const DirectosSubscribers = () => {
           alt=""
           className="next-stream__image"
         />
+        <button  className='next-stream__btn'>
+          <a href="">Al directo</a>
+        </button>
       </div>
       <div>
-        <h2>Directos pasados</h2>
+        <h2 className="past-stream__list-title">Directos pasados</h2>
         <div>
-            {pastLiveList && pastLiveList.map(live => {
-                <PastLiveCard liveTitle = {live.liveTitle} liveDate = {live.liveDate} />
+          {pastLiveList &&
+            pastLiveList.map((live) => {
+              <PastLiveCard
+                liveTitle={live.liveTitle}
+                liveDate={live.liveDate}
+              />;
             })}
         </div>
       </div>

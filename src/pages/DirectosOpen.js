@@ -2,6 +2,7 @@ import React, {useContext} from "react"
 import { TitleContext } from "../components/TitleContext"
 export const DirectosOpen = () => {
   const { title, setTitle} = useContext(TitleContext)
+  setTitle("Directos")
   return (
     <>
       <div>

@@ -54,28 +54,31 @@ table {
 
 h1 {
   font-size: 3.3rem;
-  color: #8D9DA9;
+  color: #fff;
   line-height: 1.6em;
   text-align: center;
 }
 
 h2 {
   font-size: 2.7rem;
-  color: #8D9DA9;
+  color: #586874;
   line-height: 1.6em;
-  margin: 1.5em 0;
+  margin: 0.5em 0 1.5em;
+  text-align: center;
 }
 
-p, a {
+p, a, label {
   font-size: 1.8rem;
-  color: #8D9DA9;
+  color: #586874;
   line-height: 1.6em;
-  margin: 1.5em 0;
+  margin: 2em auto;
+  max-width: 75ch;
 }
 
 a {
   text-decoration: none;
   margin: 1.5em 1em;
+  padding: 0.5em 1em;
 }
 
 menu a {
@@ -89,7 +92,7 @@ menu a {
 
 .next-stream__title {
   font-size: 1.8rem;
-  color: #8D9DA9;
+  color: #586874;
   line-height: 1.6em;
   margin: 1.5em 0;
   text-align: center;
@@ -98,9 +101,10 @@ menu a {
 
 button {
   border: none;
-  background-color: #90CEFC;
+  background-color: #5ca1d6;
   border-radius: 5px;
-  margin: 3.5vh auto;
+  margin: 6.5vh auto;
+  padding: 0.5em 1em;
   display: block;
 }
 button a {
@@ -108,21 +112,24 @@ button a {
 }
 
 header {
-  background-color: #90CEFC;
-  padding: 1.5em 0;
+  background-color: #51b1fb;
+  padding: 2.5em 0;
 }
 
 footer {
-  background-color: #8D9DA9;
+  background-color: #586874;
   padding: 0.75em 1.5em;
   position: fixed;
   inset: auto 0 0 0;
   display: flex;
   justify-content: flex-end;
 }
+footer p {
+  margin: 2em;
+}
 
 main {
-  padding: 0 2.5em;
+  padding: 2.5vh 2.5em;
   margin-bottom: 15vh;
 }
 
@@ -130,6 +137,119 @@ main {
   width: 80vw;
   height: 35vw;
   object-fit: cover;
+}
+
+@media screen and (min-width: 700px) {
+  p {
+    font-size: 2.1rem;
+  }
+
+  main {
+    padding: 0 10vw;
+  }
+}
+@media screen and (min-width: 1200px) {
+  input {
+    width: 30vw;
+  }
+
+  header {
+    justify-content: end;
+  }
+
+  menu {
+    width: fit-content;
+    margin: auto 0 0 auto;
+  }
+
+  menu a {
+    color: white;
+    display: inline;
+  }
+  menu a:hover {
+    color: #586874;
+  }
+  menu a:focus {
+    color: #586874;
+    background-color: #fff;
+  }
+  menu a:active {
+    color: #fff;
+    background-color: #586874;
+  }
+
+  .next-stream__image {
+    height: 25vh;
+    width: 75vh;
+    object-fit: cover;
+  }
+}
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+label {
+  margin: 1vh 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+input {
+  border: 1px solid #c5cdd3;
+  border-radius: 5px;
+  padding: 0.5em 1em;
+}
+
+textarea {
+  height: 20vh;
+  border: 1px solid #c5cdd3;
+  border-radius: 5px;
+  padding: 0.5em 1em;
+}
+
+.form__btn {
+  border: none;
+  background-color: #5ca1d6;
+  border-radius: 5px;
+  margin: 3.5vh auto;
+  padding: 0.5em 1em;
+  display: block;
+}
+
+.directos__anuncio {
+  display: block;
+  margin: 0 auto;
+  max-width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.directos__texto {
+  display: flex;
+  flex-direction: row;
+}
+.directos__texto p {
+  margin: 5vh 5vw 0;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.directos p {
+  text-align: center;
+}
+
+.past-stream__list-title {
+  text-align: left;
+  margin: 10vh 15vw;
+  padding-top: 2em;
+  border-top: 2px solid #586874;
+}
+
+.next-stream__btn {
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

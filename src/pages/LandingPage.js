@@ -3,6 +3,8 @@ import { TitleContext } from "../components/TitleContext"
 
 export const LandingPage = () => {
   const { title, setTitle} = useContext(TitleContext)
+  setTitle("Prisma de Orquesta")
+
   
   return (
     <>

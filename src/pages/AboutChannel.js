@@ -1,7 +1,8 @@
 import React, {useContext} from "react"
 import { TitleContext } from "../components/TitleContext"
 export const AboutChannel = () => {
-    const { title, setTitle} = useContext(TitleContext)
+    const { setTitle} = useContext(TitleContext)
+  setTitle("Acerca de Prisma de Orquesta")
     return(
         <>
         <p>Prisma de orquesta nació en septiembre de 2019 como Monkey Musician de la necesidad de compartir lo que sentia y pensaba sobre música.</p>
