@@ -18,7 +18,7 @@ export const LandingPage = () => {
         obra desde diversas perspectivas: ritmo, armonia, instrumentación... y
         su aplicación a la interpretación y el gesto.
       </p>
-      <button><a href="">Descubre mas</a></button>
+      <button><a href="/directosOpen">Descubre mas</a></button>
     </>
   );
 };
