@@ -3,6 +3,8 @@ import { TitleContext } from "../components/TitleContext"
 
 export const Header = () => {
     const { title, setTitle} = useContext(TitleContext)
+    
+
     return(
         <header>
             <h1>{title}</h1>
@@ -13,6 +15,7 @@ export const Header = () => {
                 <a href="/aboutchannel">Prisma de Orquesta</a>
                 <a href="/contact">Contacto</a>
             </menu>
+            
         </header>        
     )
 }

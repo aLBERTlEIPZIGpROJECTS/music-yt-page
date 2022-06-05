@@ -1,0 +1,14 @@
+@use './colors' as *;
+
+.signup {
+
+    &__label {
+        margin: 1vh 0;
+    }
+    &__input {
+        margin: 1vh 0;
+    }
+  &__btn {
+    color: $white;
+  }
+}
