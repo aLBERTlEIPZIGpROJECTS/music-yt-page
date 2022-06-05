@@ -8,6 +8,7 @@ import { AboutChannel } from './pages/AboutChannel';
 import { Contact } from './pages/Contact';
 import { DirectosOpen } from './pages/DirectosOpen';
 import { DirectosSubscribers } from './pages/DirectosSubscribers';
+import { SignIn } from './pages/SignIn';
 import { TitleContext } from './components/TitleContext';
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
             <Route path="/aboutchannel" element={<AboutChannel />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/directosopen" element={<DirectosOpen />} />
+            <Route path="/signin" element={<SignIn />} />
             <Route
               path="/directosSubscribers"
               element={<DirectosSubscribers />}
